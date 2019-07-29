@@ -1,6 +1,10 @@
 require 'pry'
 class CashRegister
+<<<<<<< HEAD
   attr_accessor :total, :discount, :items, :last_transaction
+=======
+  attr_accessor :total, :discount, :items
+>>>>>>> 907dc8d8933e0cfc7be26ed5b2545c8c398792fb
   
   
   
@@ -14,7 +18,10 @@ class CashRegister
   def add_item(item, price, quantity=1)
     self.total += (price * quantity)
     quantity.times {@items << item}
+<<<<<<< HEAD
     self.last_transaction = price * quantity
+=======
+>>>>>>> 907dc8d8933e0cfc7be26ed5b2545c8c398792fb
   end
   
   def apply_discount
@@ -25,8 +32,17 @@ class CashRegister
     # binding.pry
   end
   
+<<<<<<< HEAD
   def void_last_transaction
     self.total -= last_transaction
+=======
+  def items
+    items
+  end
+  
+  def void_last_transaction
+    
+>>>>>>> 907dc8d8933e0cfc7be26ed5b2545c8c398792fb
   end
   
 end
